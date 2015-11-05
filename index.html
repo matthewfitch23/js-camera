@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+	<title>Camera Demo</title>
+
+	<link href="css/fonts.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
+	<link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection">
+	<link href="favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+	<div class="navbar-fixed">
+		<nav role="navigation">
+			<div class="nav-wrapper container">
+				<a id="logo-container" href="#" class="brand-logo">Camera Demo</a>
+			</div>
+		</nav>
+	</div>
+	<br>
+	<div class="container">
+		<div id="photos" class="column">
+			<div class="col s12 m6">
+				<div class="card grey lighten-4">
+					<div class="card-content">
+						<span class="card-title black-text">Photos</span>
+						<div id="photos-content">
+							<video id="video" style="display: none;" autoplay></video>
+							<a class="waves-effect waves-light btn" id="new" href="#" onclick="openCamera();"><i class="material-icons">&#xE145;</i></a>
+							<a class="waves-light btn" id="snap" href="#" style="display: none;" onclick="takePhoto();"><i class="material-icons">&#xE412;</i></a>
+							<a class="waves-effect waves-light btn" id="switch" href="#" style="display: none;" onclick="cycleCameras();"><i class="material-icons">&#xE41E;</i></a>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>
